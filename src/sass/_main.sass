@@ -1,3 +1,246 @@
-.block
-	display: flex
-	// remove this
+=t
+  @media only screen and (max-width: "699px")
+    @content
+=m
+  @media only screen and (max-width: "599px")
+    @content
+=s
+	@media only screen and(max-width: "449px")
+		@content
+$white: #fff
+$black: #000
+$gray: #808080
+$red: #a6334e
+$red-light: #900022
+*
+	box-sizing: border-box
+a
+	text-decoration: none
+	color: $black
+html, body
+	font-size: 18px
+	font-family: $PR
+	line-height: 1.35
+	color: $black
+.out
+	max-width: 768px
+	margin-left: auto
+	margin-right: auto
+	padding:  0 4.5%
+.info-block
+	padding-bottom: 15px
+	+clr
+	&__date, &__stat
+		font-size: 13px
+		line-height: 1.2
+		color: #888
+	&__date
+		float: left
+		padding-top: 8px
+	&__stat
+		text-transform: uppercase
+		float: right
+		span
+			+s
+				display: none
+	&__stat-link
+		display: inline-block
+		background: #808080
+		padding: 0 13px
+		height:  32px
+		line-height: 30px
+		color: $white
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			bottom: -9px
+			left: 50%
+			transform: translateX(-50%)
+			+arr(9, 18, #808080, r )
+.post
+	position: relative
+	&__title
+		font-size: 38px
+		font-weight: normal
+		font-family: $PEB
+		color: $white
+		position: absolute
+		left: 0
+		top: -180px
+		z-index: 3
+		+m
+			font-size: 30px
+			color: $black
+			position: relative
+			top: 0
+			margin-bottom: 20px
+	&__author, &__img-author
+		position: absolute
+		left: 0
+		top: -80px
+		width: 100%
+		z-index: 3
+	&__author
+		text-transform: uppercase
+		+m
+			display: none
+		a
+			color: $white
+			font-size: 13px
+	&__img-author
+		color: $white
+		text-align: right
+		font-size: 10px
+		text-transform: uppercase
+		top: -60px
+		+m
+			display: none
+	&__socials
+		font-size: 0
+		margin-bottom: 10px
+		max-width: 660px
+		margin-left: auto
+		margin-right: auto
+		+t
+			display: none
+	&__social
+		display: inline-block
+		color: $white
+		background: $gray
+		width: 95px
+		padding: 0 10px 0 15px
+		height: 42px
+		margin: 0 10px 0px 0
+		+clr
+		amp-img
+			display: inline-block
+			margin-top: 10px
+			float: left
+		span
+			font-size: 12px
+			float: right
+			margin-top: 11px
+	&__socials-footer
+		+t
+			display: block
+	&__social-footer
+		+m
+			width: 24%
+			margin-right: 1%
+			&:last-of-type
+				margin-right: 0
+	&__text
+		blockquote
+			max-width: 690px
+			margin-left: auto
+			margin-right: auto
+			padding: 5px 5px 5px 10px
+			border-left: 2px #888 solid
+			background-color: #EEE
+		p
+			padding: 10px 5px 10px 0
+			&:first-of-type
+				text-align: center
+
+		strong
+			font-family: $PB
+		a
+			color: $red
+			border-bottom: $red 1px solid
+		&>amp-img
+			margin: 25px auto
+			display: block
+	&__tags
+		margin-top: 20px
+		margin-bottom: 20px
+		font-size: 15px
+		text-transform: uppercase
+		color: $gray
+		a
+			color: $red
+	&__note
+		padding: 18px 0 28px
+		line-height: 1.2
+		font-size: 13px
+		color: $gray
+.similar
+	margin-top: 50px
+	border-top: #900022 1px solid
+	border-bottom: #900022 1px solid
+	padding-bottom: 40px
+	&__title
+		color: $red-light
+		
+		padding-top: 9px
+		margin-bottom: 7px
+		font-size: 18px
+.similar-article
+	padding: 15px 0
+	&__title
+		font-size: 18px
+		font-family: $PB
+		transition: all .2s
+		&:hover
+			color: $red-light
+	&__date
+		font-size: 10px
+		color: $gray
+		display: inline-block
+		margin-top: 4px
+
+
+
+.menu-btn
+	position: relative
+	display: inline-block
+	vertical-align: bottom
+	width: 25px
+	height: 14px
+	overflow: visible
+	cursor: pointer
+	text-align: left
+	float: left
+	margin-top: 12px
+	&:before
+		top: -10px
+		left: -10px
+		bottom: -10px
+		right: -10px
+		content: ''
+		position: absolute
+	&__inner
+		height: 100%
+		width: 100%
+		span
+			height: 2px
+			width: 25px
+			background: #fff
+			position: absolute
+			top: 50%
+			margin-top: -1px
+			transition: all .2s
+		&:before, &:after
+			transition: all .3s
+			content: ''
+			position: absolute
+			height: 2px
+			width: 25px
+			background: #fff
+			left: 0
+		&:before
+			top: 0px
+			//transform-origin: top left
+		&:after
+			bottom: 0px
+			//transform-origin: bottom left
+//.menu-btn-is-active
+//	//+r(767)
+//	div
+//		opacity: 0
+//		&:before, &:after
+//			width: 20px
+//		&:before
+//			transform: translateX(6px) rotate(45deg)
+//		&:after
+//			transform: translateX(6px) rotate(-45deg)

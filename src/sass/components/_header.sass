@@ -1,0 +1,37 @@
+.header
+	position: relative
+	margin-bottom: 30px
+	&__logo
+		display: inline-block
+		svg
+			font-size: 34px
+			fill: #ddd
+	&__main-img
+		position: relative
+		z-index: 1
+		&:before
+			+coverdiv
+			background: #000
+			opacity: .2
+			content: ''
+			z-index: 2
+.htopline
+	position: absolute
+	padding: 5px 2.5% 0
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 3
+	text-align: center
+	&__right
+		float: right
+		margin-top: 11px
+		amp-img
+			margin-right: 20px
+			cursor: pointer
+			&:last-of-type
+				margin-right: 0
+			+r(600)
+				margin-right: 0
+				&:last-of-type
+					display: none
