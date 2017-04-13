@@ -304,14 +304,14 @@ html, body {
 
 .post__social amp-img {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   float: left;
 }
 
 .post__social span {
   font-size: 12px;
   float: right;
-  margin-top: 11px;
+  margin-top: 14px;
 }
 
 .post__text blockquote {
@@ -527,6 +527,7 @@ html, body {
   border-top: #900022 5px solid;
   background: #333;
   padding-top: 38px;
+  padding-bottom: 30px;
 }
 
 .footer-info {
@@ -704,6 +705,7 @@ html, body {
 
   .footer-info__contacts {
     width: 100%;
+    margin: 0;
   }
 }
 
