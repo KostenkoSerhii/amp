@@ -26,59 +26,7 @@ html, body
 	font-family: $PR
 	line-height: 1.35
 	color: $black
-.menu-btn
-	position: relative
-	display: inline-block
-	vertical-align: bottom
-	width: 25px
-	height: 14px
-	overflow: visible
-	cursor: pointer
-	text-align: left
-	float: left
-	margin-top: 12px
-	&:before
-		top: -10px
-		left: -10px
-		bottom: -10px
-		right: -10px
-		content: ''
-		position: absolute
-	&__inner
-		height: 100%
-		width: 100%
-		span
-			height: 2px
-			width: 25px
-			background: #fff
-			position: absolute
-			top: 50%
-			margin-top: -1px
-			transition: all .2s
-		&:before, &:after
-			transition: all .3s
-			content: ''
-			position: absolute
-			height: 2px
-			width: 25px
-			background: #fff
-			left: 0
-		&:before
-			top: 0px
-			//transform-origin: top left
-		&:after
-			bottom: 0px
-			//transform-origin: bottom left
-//.menu-btn-is-active
-//	//+r(767)
-//	div
-//		opacity: 0
-//		&:before, &:after
-//			width: 20px
-//		&:before
-//			transform: translateX(6px) rotate(45deg)
-//		&:after
-//			transform: translateX(6px) rotate(-45deg)
+
 .out
 
 .layout
@@ -211,6 +159,9 @@ html, body
 		a
 			color: $red
 			border-bottom: $red 1px solid
+			transition: all .2s
+			&:hover
+				border-bottom-color: transparent
 		&>amp-img
 			margin: 25px auto
 			display: block
@@ -236,7 +187,7 @@ html, body
 	margin-top: 60px
 	border-top: #900022 1px solid
 	border-bottom: #900022 1px solid
-	padding-bottom: 40px
+	padding-bottom: 10px
 	&__title
 		padding-top: 9px
 		margin-bottom: 7px
@@ -255,7 +206,7 @@ html, body
 		margin-top: 4px
 .comments-block
 	padding-top: 9px
-	margin-bottom: 130px
+	margin-bottom: 100px
 	&__title
 		margin-bottom: 7px
 	&__auth
@@ -273,7 +224,7 @@ html, body
 .other-articles
 	font-size: 0
 	background: $gray-light
-	padding: 50px 0 100px
+	padding: 44px 0 100px
 	&__item
 		&:nth-of-type(odd)
 			margin-right: 4%

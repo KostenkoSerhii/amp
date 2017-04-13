@@ -198,7 +198,7 @@
 			<!--begin similar-->
 			<div class="similar">
 				<p class="similar__title block-title">ПО ТЕМІ</p>
-				<amp-list layout="responsive" width="400" height="100" layout="fixed-height" src="data/data.json">
+				<amp-list layout="responsive" width="400" height="100" layout="fixed-height" src="http://localhost:8080/data/data.json">
 					<template type="amp-mustache">
 						<div class="similar-article">
 							<a href="" class="similar-article__title">Index page</a>
@@ -288,59 +288,44 @@
 </footer>
 
 
-<amp-sidebar id="sidebar"
+<amp-sidebar id="sidebar" class="sidebar"
 layout="nodisplay"
 side="left">
-<!-- <amp-img class="amp-close-image"
-src="/img/ic_close_black_18dp_2x.png"
-width="20"
-height="20"
-alt="close sidebar"
-on="tap:sidebar.close"
-role="button"
-tabindex="0"></amp-img> -->
-<ul>
-	<li>
-		<a href="/">Home</a>
-	</li>
-	<li> Nav item 1</li>
-	<li>
-
-		Nav item 2 - &lt;amp-fit-text&gt;
-
-	</li>
-	<li>
-
-		Nav item 3 - &lt;amp-fit-text&gt; longer text asdadad
-
-	</li>
-<!-- 	<li> Nav item 4 - Image
-	<amp-img class="amp-sidebar-image"
-	src="/img/favicon.png"
-	width="20"
-	height="20"
-	alt="an image"></amp-img>
-</li> -->
-<li> Nav item 5</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-<li> Nav item 6</li>
-</ul>
+<button  on="tap:sidebar.close"
+class="ampstart-btn sidebar__close caps m2">X</button>
+<!-- begin sidebar__wrapper -->
+<div class="sidebar__wrapper">
+	<div class="slangs">
+		<a class="slangs__item is-active" href="#">укр</a>
+		<a class="slangs__item" href="#">рос</a>
+		<a class="slangs__item" href="#">eng</a>
+	</div>
+	<ul class="main-menu">
+		<li class="main-menu__item"><a href="#" class="main-menu__link">НОВИНИ</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">ПУБЛІКАЦІЇ</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">КОЛОНКИ</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">ІНТЕРВ'Ю</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">ГРАФІКА</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">ФОТО І ВІДЕО</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">БЛОГИ</a></li>
+		<li class="main-menu__item"><a href="#" class="main-menu__link">АРХІВ</a></li>
+	</ul>
+	<ul class="second-menu">
+	<li class="second-menu_item"><a href="#" class="second-menu__link second-menu__link--spec">УКРАЇНСЬКА ПРАВДА</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ЕКОНОМІЧНА ПРАВДА</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ЖИТТЯ</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ЄВРОПЕЙСЬКА ПРАВДА</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">БЛОГИ</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ІСТОРИЧНА ПРАВДА</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">CHAMPION.COM.UA</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">КИЇВ</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ТАБЛОID</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">БЖ</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ДОСТУП ДО ПРАВДИ</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link">ФОРУМ</a></li>
+	</ul>
+</div>
+<!-- end sidebar__wrapper -->
 </amp-sidebar>
 
 
