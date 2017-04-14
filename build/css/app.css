@@ -556,13 +556,15 @@ html, body {
 .slangs {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 0;
 }
 
 .slangs__item {
+  display: inline-block;
   color: #808080;
   line-height: 1.8;
   text-transform: uppercase;
-  padding: 10 6px;
+  padding: 10px 6px;
   font-size: 12px;
 }
 
