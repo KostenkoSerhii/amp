@@ -140,54 +140,62 @@
 			<!--begin similar-->
 			<div class="similar">
 				<p class="similar__title block-title">ПО ТЕМІ</p>
-				<amp-list  layout="fill" src="https://api.myjson.com/bins/11vzyj" >
-					<template type="amp-mustache" id="amp-template-id">
-						<div class="similar-article">
-							<a href="{{url}}" class="similar-article__title">{{title}}</a>
-							<span class="similar-article__date">{{date}}</span>
-						</div>
-					</template>
-				</amp-list>
-			</div>
-			<!--end similar-->
-			<!--begin comments-block-->
-			<div class="comments-block">
-				<a class="comments-block__title block-title" href="#">КОМЕНТАРІ — 0</a>
-				<div class="comments-block__auth">
-					<a class="comments-block__auth-btn" href="#">авторизуйтесь</a>ЩОБ ПИСАТИ КОМЕНТАРІ
-				</div>
-			</div>
-			<!--end comments-block-->
-
+<!-- 				<amp-list  layout="fixed-height" width="auto" height="100" src="https://api.myjson.com/bins/11vzyj">
+	<template type="amp-mustache" id="amp-template-id">
+		<div class="similar-article">
+			<a href="{{url}}" class="similar-article__title">{{title}}</a>
+			<span class="similar-article__date">{{date}}</span>
 		</div>
-		<!--end layout-->
-		<!--begin other-articles-->
-		<div class="other-articles">
-			<div class="layout">
-				<p class="other-articles__title block-title">ВИБІР РЕДАКТОРА</p>
-				<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="img/other1.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-					<a class="other-article__title" href="#">Як ми втрачали Крим. Свідчення перших осіб України</a>
-					<p class="other-article__info">10 КВІТНЯ 2017, 16:00 — ОКСАНА КОВАЛЕНКО</p>
-				</div>
-				<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="img/other2.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-					<a class="other-article__title" href="#">Годівничка для міністрів. Що записано в деклараціях чиновників</a>
-					<p class="other-article__info">7 КВІТНЯ 2017, 13:08 — РОМАН РОМАНЮК, РОМАН КРАВЕЦЬ</p>
-				</div>
-				<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="img/other3.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-					<a class="other-article__title" href="#">Один день з прем’єр-міністром. Як Володимир Гройсман майже рік очолює уряд, і що з цього виходить</a>
-					<p class="other-article__info">6 КВІТНЯ 2017, 12:00 — МАРІЯ ЖАРТОВСЬКА, ДМИТРО ЛАРІН, УП</p>
-				</div>
-				<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="img/other4.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-					<a class="other-article__title" href="#">Красногорівка: скільки коштує комуналка на передовій</a>
-					<p class="other-article__info">27 БЕРЕЗНЯ 2017, 14:59 — ЛЕСЯ ГАНЖА</p>
-				</div>
-			</div>
-		</div>
-		<!--end other-articles-->
-
+	</template>
+</amp-list> -->
+<amp-list template="myList" width=300 height=200 src="https://s3-eu-west-1.amazonaws.com/gerswap/test.json">
+</amp-list>
+<template id="myList" type="amp-mustache">
+	<div>
+		<p>text : {{text}}</p>
+		<p>url : {{url}}</p>
 	</div>
-	<!--end main-content-->
+</template>
+</div>
+<!--end similar-->
+<!--begin comments-block-->
+<div class="comments-block">
+	<a class="comments-block__title block-title" href="#">КОМЕНТАРІ — 0</a>
+	<div class="comments-block__auth">
+		<a class="comments-block__auth-btn" href="#">авторизуйтесь</a>ЩОБ ПИСАТИ КОМЕНТАРІ
+	</div>
+</div>
+<!--end comments-block-->
+
+</div>
+<!--end layout-->
+<!--begin other-articles-->
+<div class="other-articles">
+	<div class="layout">
+		<p class="other-articles__title block-title">ВИБІР РЕДАКТОРА</p>
+		<div class="other-article other-articles__item">
+			<amp-img class="other-article__img" src="img/other1.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+			<a class="other-article__title" href="#">Як ми втрачали Крим. Свідчення перших осіб України</a>
+			<p class="other-article__info">10 КВІТНЯ 2017, 16:00 — ОКСАНА КОВАЛЕНКО</p>
+		</div>
+		<div class="other-article other-articles__item">
+			<amp-img class="other-article__img" src="img/other2.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+			<a class="other-article__title" href="#">Годівничка для міністрів. Що записано в деклараціях чиновників</a>
+			<p class="other-article__info">7 КВІТНЯ 2017, 13:08 — РОМАН РОМАНЮК, РОМАН КРАВЕЦЬ</p>
+		</div>
+		<div class="other-article other-articles__item">
+			<amp-img class="other-article__img" src="img/other3.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+			<a class="other-article__title" href="#">Один день з прем’єр-міністром. Як Володимир Гройсман майже рік очолює уряд, і що з цього виходить</a>
+			<p class="other-article__info">6 КВІТНЯ 2017, 12:00 — МАРІЯ ЖАРТОВСЬКА, ДМИТРО ЛАРІН, УП</p>
+		</div>
+		<div class="other-article other-articles__item">
+			<amp-img class="other-article__img" src="img/other4.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+			<a class="other-article__title" href="#">Красногорівка: скільки коштує комуналка на передовій</a>
+			<p class="other-article__info">27 БЕРЕЗНЯ 2017, 14:59 — ЛЕСЯ ГАНЖА</p>
+		</div>
+	</div>
+</div>
+<!--end other-articles-->
+
+</div>
+<!--end main-content-->
