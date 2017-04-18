@@ -11,10 +11,25 @@
 				<amp-img src="img/logo.svg" height="40" width="200" alt="alt"></amp-img>
 			</div>
 			<div class="htopline__right">
-				<amp-img src="img/search.svg" alt="alt"  width="20" height="20"></amp-img>
+				<div class="search-wrapper">
+					<label for="search"><amp-img src="img/search.svg" alt="alt"  width="20" height="20"></amp-img></label>
+					<input name="seacrh" type="radio" id="search-close">
+					<input class="open-popup" name="seacrh" type="radio" id="search">
+					<div class="search popup">
+						<p class="search__title">ПОШУК ПО САЙТУ</p>
+						<form method="GET"
+						target="_top">
+						<input type="search" placeholder="ЩО ВИ ШУКАЄТЕ?" name="search" class="search__input">
+						<input type="submit" value="ЗНАЙТИ" class="ampstart-btn caps search__btn">
+					</form>
+					<label for="search-close"><span class="close"></span></label>
+				</div>
+			</div>
+			<div class="login-wrapper">
 				<amp-img src="img/user.svg" alt="alt"  width="20" height="20"></amp-img>
 			</div>
 		</div>
-		<amp-img class="header__main-img"  src="img/header-bg.jpg" alt="alt" height="457" width="768" layout="responsive"></amp-img>
 	</div>
+	<amp-img class="header__main-img"  src="img/header-bg.jpg" alt="alt" height="457" width="768" layout="responsive"></amp-img>
+</div>
 </header>

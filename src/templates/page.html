@@ -8,6 +8,7 @@ title: Index page
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <link href="css/app.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
@@ -30,7 +31,7 @@ title: Index page
 layout="nodisplay"
 side="left">
 <button  on="tap:sidebar.close"
-class="ampstart-btn sidebar__close caps m2">X</button>
+class="ampstart-btn sidebar__close close caps m2"></button>
 <!-- begin sidebar__wrapper -->
 <div class="sidebar__wrapper">
 	<div class="slangs">
@@ -49,7 +50,7 @@ class="ampstart-btn sidebar__close caps m2">X</button>
 		<li class="main-menu__item"><a href="#" class="main-menu__link">АРХІВ</a></li>
 	</ul>
 	<ul class="second-menu">
-	<li class="second-menu_item"><a href="#" class="second-menu__link second-menu__link--spec">УКРАЇНСЬКА ПРАВДА</a></li>
+		<li class="second-menu_item"><a href="#" class="second-menu__link second-menu__link--spec">УКРАЇНСЬКА ПРАВДА</a></li>
 		<li class="second-menu_item"><a href="#" class="second-menu__link">ЕКОНОМІЧНА ПРАВДА</a></li>
 		<li class="second-menu_item"><a href="#" class="second-menu__link">ЖИТТЯ</a></li>
 		<li class="second-menu_item"><a href="#" class="second-menu__link">ЄВРОПЕЙСЬКА ПРАВДА</a></li>
