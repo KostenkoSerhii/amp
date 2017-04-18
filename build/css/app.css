@@ -325,7 +325,7 @@ html, body {
   margin-top: 60px;
   border-top: #900022 1px solid;
   border-bottom: #900022 1px solid;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .similar__title {
@@ -350,7 +350,7 @@ html, body {
 .similar-article__date {
   font-size: 10px;
   color: #808080;
-  display: inline-block;
+  display: block;
   margin-top: 4px;
 }
 
