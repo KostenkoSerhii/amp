@@ -26,15 +26,6 @@
 	&__right
 		float: right
 		margin-top: 11px
-		amp-img
-			margin-right: 20px
-			cursor: pointer
-			&:last-of-type
-				margin-right: 0
-			+r(600)
-				margin-right: 0
-				&:last-of-type
-					display: none
 .menu-btn
 	position: relative
 	display: inline-block
@@ -76,17 +67,58 @@
 			left: 0
 		&:before
 			top: 0px
-			//transform-origin: top left
 		&:after
 			bottom: 0px
-			//transform-origin: bottom left
-//.menu-btn-is-active
-//	//+r(767)
-//	div
-//		opacity: 0
-//		&:before, &:after
-//			width: 20px
-//		&:before
-//			transform: translateX(6px) rotate(45deg)
-//		&:after
-//			transform: translateX(6px) rotate(-45deg)
+
+.search-wrapper
+	display: inline-block
+	margin-right: 20px
+	+r(600)
+		margin-right: 0
+	input.open-popup
+		&:checked + .popup
+			display: block
+.login-wrapper
+	display: inline-block
+	+r(600)
+		display: none
+.search-wrapper, .login-wrapper
+	&>input
+		display: none
+	amp-img
+		cursor: pointer
+		position: relative
+.search
+	text-align: center
+	form
+		font-size: 0
+	&__title
+		font-size: 34px
+		text-transform: uppercase
+		color: $black
+		padding-top: 15px
+		padding-bottom: 30px
+		+r(767)
+			font-size: 28px
+	&__input
+		width: percentage(611/768)
+		display: inline-block
+		border: 1px solid #888
+		font-size: 16px
+		padding: 0 10px
+		height: 40px
+		line-height: 40px
+		+m
+			width: percentage(500/768)
+	&__btn
+		background: #666
+		padding: 0 15px
+		height: 40px
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 40px
+		margin-left: 10px
+		color: $white
+		display: inline-block
+		vertical-align: top
+

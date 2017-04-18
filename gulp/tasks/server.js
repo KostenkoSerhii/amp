@@ -28,8 +28,10 @@ gulp.task('server', function() {
         notify: false,
         ghostMode: false,
         online: Boolean(util.env.tunnel),
-        tunnel: util.env.tunnel || null
+        tunnel: util.env.tunnel || null,
+
     });
+
 });
 
 module.exports = server;
