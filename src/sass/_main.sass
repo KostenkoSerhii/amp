@@ -76,7 +76,7 @@ html, body
 		position: absolute
 		left: 0
 		top: -180px
-		z-index: 3
+		z-index: 1
 		padding: 0 15px
 		+m
 			font-size: 30px
@@ -85,13 +85,12 @@ html, body
 			top: 0
 			margin-bottom: 20px
 			padding: 0
-			z-index: 0
 	&__author, &__img-author
 		position: absolute
 		left: 0
 		top: -80px
 		width: 100%
-		z-index: 3
+		z-index: 1
 		padding: 0 15px
 	&__author
 		text-transform: uppercase
@@ -225,12 +224,23 @@ html, body
 .other-articles
 	font-size: 0
 	background: $gray-light
-	padding: 44px 0 100px
+	padding: 44px 0 40px
 	&__item
 		&:nth-of-type(odd)
 			margin-right: 4%
 	&__title
 		margin-bottom: 10px
+	&__container
+		height: 660px
+		position: relative
+		+r(699)
+			height: 640px
+		+r(599)
+			height: 610px
+		+r(500)
+			height: 530px
+		+s
+			height: 430px
 .other-article
 	display: inline-block
 	vertical-align: top
@@ -281,11 +291,10 @@ html, body
 	padding: 40px
 	display: none
 	position: fixed
-	overflow: scroll
 	top: 0
 	left: 0
-	right: 0
-	bottom: 0
+	width: 100vw
+	height: 100vh
 	z-index: 22
 	&:before
 		content: ''

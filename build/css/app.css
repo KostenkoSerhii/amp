@@ -193,7 +193,7 @@ html, body {
   position: absolute;
   left: 0;
   top: -180px;
-  z-index: 3;
+  z-index: 1;
   padding: 0 15px;
 }
 
@@ -202,7 +202,7 @@ html, body {
   left: 0;
   top: -80px;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
   padding: 0 15px;
 }
 
@@ -382,7 +382,7 @@ html, body {
 .other-articles {
   font-size: 0;
   background: #f3f3f3;
-  padding: 44px 0 100px;
+  padding: 44px 0 40px;
 }
 
 .other-articles__item:nth-of-type(odd) {
@@ -391,6 +391,11 @@ html, body {
 
 .other-articles__title {
   margin-bottom: 10px;
+}
+
+.other-articles__container {
+  height: 660px;
+  position: relative;
 }
 
 .other-article {
@@ -454,11 +459,10 @@ html, body {
   padding: 40px;
   display: none;
   position: fixed;
-  overflow: scroll;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 22;
 }
 
@@ -615,6 +619,7 @@ html, body {
   color: #000;
   padding-top: 15px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .search__input {
@@ -625,6 +630,11 @@ html, body {
   padding: 0 10px;
   height: 40px;
   line-height: 40px;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 .search__btn {
@@ -638,6 +648,11 @@ html, body {
   color: #fff;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 .sidebar {
@@ -652,7 +667,7 @@ html, body {
 }
 
 .sidebar__wrapper {
-  width: 280px;
+  width: 240px;
   padding: 0 15px;
 }
 
@@ -834,6 +849,10 @@ html, body {
   .post__socials-footer {
     display: block;
   }
+
+  .other-articles__container {
+    height: 640px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -856,7 +875,6 @@ html, body {
     top: 0;
     margin-bottom: 20px;
     padding: 0;
-    z-index: 0;
   }
 
   .post__author {
@@ -876,6 +894,10 @@ html, body {
     margin-right: 0;
   }
 
+  .other-articles__container {
+    height: 610px;
+  }
+
   .search__input {
     width: 65.10417%;
   }
@@ -890,6 +912,13 @@ html, body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+
+  .other-articles__container {
+    height: 530px;
+  }
+}
+
 @media only screen and (max-width: 499px) {
 
   .other-article__info {
@@ -901,6 +930,10 @@ html, body {
 
   .info-block__stat span {
     display: none;
+  }
+
+  .other-articles__container {
+    height: 430px;
   }
 
   .other-article__title {
