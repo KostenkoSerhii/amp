@@ -49,10 +49,10 @@
 					<input class="open-popup" name="seacrh" type="radio" id="search">
 					<div class="search popup">
 						<p class="search__title">ПОШУК ПО САЙТУ</p>
-<form method="GET" action="/components/amp-form/submit-form""
-target="_top">
-<input type="search" placeholder="ЩО ВИ ШУКАЄТЕ?" name="search" class="search__input">
-<input type="submit" value="ЗНАЙТИ" class="ampstart-btn caps search__btn">
+						<form method="GET" action="/components/amp-form/submit-form"
+						target="_top">
+						<input type="search" placeholder="ЩО ВИ ШУКАЄТЕ?" name="search" class="search__input">
+						<input type="submit" value="ЗНАЙТИ" class="ampstart-btn caps search__btn">
 					</form>
 					<label for="search-close"><span class="close"></span></label>
 				</div>
@@ -214,7 +214,7 @@ target="_top">
 		<!--begin similar-->
 		<div class="similar">
 			<p class="similar__title block-title">ПО ТЕМІ</p>
-			<amp-list  layout="container" src="https://api.myjson.com/bins/t3xy7">
+			<amp-list  width="768" height="100" heights="(max-width:630px) 150px, 100px" layout="responsive"  src="https://api.myjson.com/bins/t3xy7">
 				<template type="amp-mustache">
 					{{#similar}}
 					<div class="similar-article">
@@ -242,17 +242,17 @@ target="_top">
 		<div class="layout ">
 			<p class="other-articles__title block-title">ВИБІР РЕДАКТОРА</p>
 			<div class="other-articles__container">
-			<amp-list  layout="fill"  src="https://api.myjson.com/bins/t3xy7">
-				<template type="amp-mustache">
-					{{#otherArticles}}
-					<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="{{imgLink}}" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-						<a class="other-article__title" href="{{url}}">{{title}}</a>
-						<p class="other-article__info">{{info}}</p>
-					</div>
-					{{/otherArticles}}
-				</template>
-			</amp-list>
+				<amp-list  width="768" height="100"  layout="responsive"   src="https://api.myjson.com/bins/t3xy7">
+					<template type="amp-mustache">
+						{{#otherArticles}}
+						<div class="other-article other-articles__item">
+							<amp-img class="other-article__img" src="{{imgLink}}" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+							<a class="other-article__title" href="{{url}}">{{title}}</a>
+							<p class="other-article__info">{{info}}</p>
+						</div>
+						{{/otherArticles}}
+					</template>
+				</amp-list>
 			</div>
 <!-- <div class="other-article other-articles__item">
 	<amp-img class="other-article__img" src="img/other1.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>

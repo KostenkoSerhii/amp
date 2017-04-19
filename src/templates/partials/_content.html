@@ -142,7 +142,7 @@
 		<!--begin similar-->
 		<div class="similar">
 			<p class="similar__title block-title">ПО ТЕМІ</p>
-			<amp-list  layout="container" src="https://api.myjson.com/bins/t3xy7">
+			<amp-list  width="768" height="100" heights="(max-width:630px) 150px, 100px" layout="responsive"  src="https://api.myjson.com/bins/t3xy7">
 				<template type="amp-mustache">
 					{% raw %}{{#similar}}{% endraw %}
 					<div class="similar-article">
@@ -170,17 +170,17 @@
 		<div class="layout ">
 			<p class="other-articles__title block-title">ВИБІР РЕДАКТОРА</p>
 			<div class="other-articles__container">
-			<amp-list  layout="fill"  src="https://api.myjson.com/bins/t3xy7">
-				<template type="amp-mustache">
-					{% raw %}{{#otherArticles}}{% endraw %}
-					<div class="other-article other-articles__item">
-					<amp-img class="other-article__img" src="{% raw %}{{imgLink}}{% endraw %}" height="170" width="275" alt="alt" layout="responsive"></amp-img>
-						<a class="other-article__title" href="{% raw %}{{url}}{% endraw %}">{% raw %}{{title}}{% endraw %}</a>
-						<p class="other-article__info">{% raw %}{{info}}{% endraw %}</p>
-					</div>
-					{% raw %}{{/otherArticles}}{% endraw %}
-				</template>
-			</amp-list>
+				<amp-list  width="768" height="100"  layout="responsive"   src="https://api.myjson.com/bins/t3xy7">
+					<template type="amp-mustache">
+						{% raw %}{{#otherArticles}}{% endraw %}
+						<div class="other-article other-articles__item">
+							<amp-img class="other-article__img" src="{% raw %}{{imgLink}}{% endraw %}" height="170" width="275" alt="alt" layout="responsive"></amp-img>
+							<a class="other-article__title" href="{% raw %}{{url}}{% endraw %}">{% raw %}{{title}}{% endraw %}</a>
+							<p class="other-article__info">{% raw %}{{info}}{% endraw %}</p>
+						</div>
+						{% raw %}{{/otherArticles}}{% endraw %}
+					</template>
+				</amp-list>
 			</div>
 <!-- <div class="other-article other-articles__item">
 	<amp-img class="other-article__img" src="img/other1.jpg" height="170" width="275" alt="alt" layout="responsive"></amp-img>
